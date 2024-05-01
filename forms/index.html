@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="./js/script.js"></script>
+    </head>
+    <body>
+        <form class="form">
+            <label class="content">Username</label><br>
+            <input id="name" type="text" placeholder="Name">
+            <br>
+            <label  class="content">password</label><br>
+            <input id="password" type="password"  placeholder="Password">
+            <br>
+            <label  class="content">qualification</label><br>
+            <input  id="qualification" type="text"  >
+            <br>
+            <label  class="content">email</label><br>
+            <input id="mail" type="email">
+            <br>
+            <textarea id="textarea"rows="5" cols="10" placeholder="give your feed back"></textarea>
+            <br>
+            <button onclick="return change();">submit</button>
+        </form>
+
+        <table border="3">
+            <tr>
+                <th>head</th>
+                <th>username</th>
+                <th>password</th>
+                <th>email</th>
+                <th>qualification</th>
+                <th>feed back</th>
+            </tr>
+            <tr>
+                <td>details</td>
+                <td id="t-user"></td>
+                <td id="t-password"></td>
+                <td id="t-email"></td>
+                <td id="t-qualification"></td>
+                <td id="t-feedback"></td>
+            </tr>
+        </table>
+    </body>
+</html>
