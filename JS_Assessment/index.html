@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="whole-container-1">
+        <ul class="header">
+            <li><img src="./images/syncfusion logo.jpg" alt="image didn'y support" class="image"></li>
+            <li>Library Portal</li>
+            <li>Books</li>
+        </ul>
+        <div class="heading"> Add New Book</div>
+        <form class="form">
+            <label>Category</label>
+            <select class="drop-down">
+                <option value="">IT</option>
+                <option value="">commerce</option>
+                <option value="">history</option>
+                <option value="">story</option>
+            </select><br>
+            <label>Book</label>
+            <input name="book" class="book" type="text" id="book" onkeyup="bookValidation()"> <span
+                id="bookvalid">valid</span><br>
+            <label>Author Email</label>
+            <input class="author-email" type="text" onkeyup="emailValidation()"><span id="mailvalid">valid</span><br>
+            <label>Author Name</label>
+            <input class="author-name" type="text" onkeyup="nameValidation()"><span id="namevalid" >valid</span><br>
+            <label>Published</label>
+            <input class="published" type="number" onkeyup="publishValidation()"><span id="publishvalid">valid</span><br>
+            <label>Price</label>
+            <input class="price" type="number" onkeyup="priceValidation()"><span id="pricevalid">valid</span><br>
+
+            <button class="save" onclick="return validation();">Save</button>
+
+            <button class="cancel" onclick="return cancel();">Cancel</button>
+            <button class="show" onclick="return show();">Show</button>
+        </form>
+
+        <div class="footer">Copyright @2024-present Syncfusion</div>
+
+    </div>
+    <br>
+    <div class="whole-container-2">
+        <ul class="header">
+            <li><img src="./images/syncfusion logo.jpg" alt="image didn'y support" class="image"></li>
+            <li>Library Portal</li>
+            <li>Books</li>
+        </ul>
+        <div class="heading"> <span class="show-book">c</span> Book Details</div>
+        <form class="form">
+            <label>Category : </label>
+            <span class="show-category">IT</span><br>
+            <label>Book : </label>
+            <span class="show-book">c</span><br>
+            <label>Author Email : </label>
+            <span class="show-author-email">gokul@123.com</span><br>
+            <label>Author Name : </label>
+            <span class="show-author-name">gokul</span><br>
+            <label>Published : </label>
+            <span class="show-publish-year">2024</span><br>
+            <label>Price : </label>
+            <span class="show-price">388.98</span><br>
+
+            <button class="save">Back</button>
+        </form>
+
+        <div class="footer">Copyright @2024-present Syncfusion</div>
+
+    </div>
+</body>
+
+</html>
